@@ -11,10 +11,10 @@ int b;
 long int c;
 long long int d;
 float e;
-printf("Size of a: %lu.\n", (ussigned long)size(a));
-printf("Size of an: %lu.\n", (ussigned long)size(b));
-printf("Size of a: %lu.\n", (ussigned long)size(c));
-printf("Size of a: %lu.\n", (ussigned long)size(d));
-printf("Size of a: %lu.\n", (ussigned long)size(e));
+printf("Size of a: %lu.\n", (ussigned long)sizeof(a));
+printf("Size of an: %lu.\n", (ussigned long)sizeof(b));
+printf("Size of a: %lu.\n", (ussigned long)sizeof(c));
+printf("Size of a: %lu.\n", (ussigned long)sizeof(d));
+printf("Size of a: %lu.\n", (ussigned long)sizeof(e));
 return (0);
 }
