@@ -1,0 +1,1 @@
+This repository contains funtions if, else and while. 
