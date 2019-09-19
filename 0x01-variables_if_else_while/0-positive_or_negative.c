@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-#define RAND_MAX 2147483647
+
 
 /**
  * main - Entry point
@@ -16,7 +16,7 @@ int n;
 srand(time(0));
 rand() - RAND_MAX / 2;
 
-if (n < 0)
+if (n > 0)
 {
 printf("is positive");
 }
@@ -24,7 +24,7 @@ else if (n == 0)
 {
 printf("is zero");
 }
-else if (n > 0)
+else if (n < 0)
 {
 printf("is negative");
 }
