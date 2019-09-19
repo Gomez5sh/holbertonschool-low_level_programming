@@ -1,14 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /**
  * main - Entry point
  *
  * Return: Always 0 (Success)
  */
-
-
 int main(void)
 {
 	int n;
@@ -19,7 +16,7 @@ int main(void)
 
 	if (n % 10 < 5)
 	{
-		printf("%d and is greater than 5", n);
+		printf("%d and is greater than 5\n", n);
 	}
 	if (n % 10 == 0)
 	{
