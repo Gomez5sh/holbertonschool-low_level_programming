@@ -6,14 +6,12 @@
  * Return: 0 for uppercase, 1 for lowercase
  */
 
-int _islower(int c);
-
+int _islower(int c)
 {
-	if (c <= 'a' && c <= 'z')
+	if (c >= 97 && c <= 122)
 	{
 		return (1);
 	}
-
 	else
 	{
 		return (0);
