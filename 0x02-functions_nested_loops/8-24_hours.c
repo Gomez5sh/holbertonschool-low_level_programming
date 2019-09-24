@@ -3,7 +3,7 @@
 /**
  * jack_bauer - returns 1 if lowercase alphabet and 0 otherwise
  *
- * Return: 0 for uppercase, 1 for lowercase
+ * Return: no retunr
  */
 
 void jack_bauer(void)
@@ -11,7 +11,6 @@ void jack_bauer(void)
 {
 	int h, m, hr, hr2, min, min2;
 
-	hr, hr2, min, min2 = 0;
 
 	for (h = 0; h <= 23; h++)
 	{
