@@ -9,7 +9,7 @@
 int _isalpha(int c)
 
 {
-	for (c >= 97 && <= 122)
+	for ((c >= 65 && 90 <= || c >= 97 && <=122))
 	{
 		return (1);
 	}
