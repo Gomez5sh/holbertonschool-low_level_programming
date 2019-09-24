@@ -2,8 +2,8 @@
 
 /**
  * add - adds two integers and returns the result
- * @a: parameters input
- * @b: parameters input
+ * @n: parameters input
+ * @x: parameters input
  * Return: adds twu integers
  */
 
