@@ -3,7 +3,6 @@
 /**
  * print_numbers - that prints the numbers.
  *
- * Return: adds twu integers
  */
 
 void print_numbers(void)
