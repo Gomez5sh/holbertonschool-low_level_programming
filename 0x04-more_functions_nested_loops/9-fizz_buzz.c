@@ -1,24 +1,18 @@
 #include <stdio.h>
-
 /**
- *main - FizzBuzz
+ *main - princpial function for c
  *
- *
- *Return: is 0
+ * Return: Always is 0
  */
-
 int main(void)
-
 {
-
 	int n;
 
 	for (n = 1; n <= 100; n++)
 	{
-
 		if ((n % 3 != 0) && (n % 5 != 0))
 		{
-			printf("%d ", n);
+			printf("%d", n);
 		}
 		else
 		{
@@ -36,9 +30,7 @@ int main(void)
 			printf(" ");
 		}
 		else
-		{
 			printf("\n");
-		}
 	}
 	return (0);
 }
