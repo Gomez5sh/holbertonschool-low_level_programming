@@ -1,16 +1,16 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
+ * print_triangle - print a triangle funtion.
  * @size: funtion to paint
  * Return: Always 0.
  */
 void print_triangle(int size)
 {
 	int l = 0;
-	int f;
+	int f = 0;
 
-	if (l > size)
+	if (l >= size)
 	{
 		_putchar('\n');
 	}
