@@ -1,20 +1,20 @@
 #include <stdio.h>
 
 /**
- *FizzBuzz
+ *main - FizzBuzz
  *
- *@n: funtion of the program
  *
  *Return: is 0
  */
 
-int main ()
+int main(void)
+
 {
 
 	int n;
 
 	for (n = 1; n <= 100; n++)
-		if (( n % 3 == 0) && (n % 5 == 0))
+		if ((n % 3 == 0) && (n % 5 == 0))
 		{
 			printf("FizzBuzz");
 		}
@@ -33,7 +33,7 @@ int main ()
 	}
 	else
 	{
-		printf ("\n");
+		printf("\n");
 	}
 	return (0);
 
