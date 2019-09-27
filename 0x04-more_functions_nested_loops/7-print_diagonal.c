@@ -9,12 +9,14 @@
 
 void print_diagonal(int n)
 {
+	int l, f;
+
 	if (n <= 0)
 	{
 		_putchar('\n');
 	}
-
-	int l, f;
+	else
+	{
 
 	for (l = 1; l <= n; l++)
 	{
@@ -26,9 +28,10 @@ void print_diagonal(int n)
 			}
 			else
 			{
-				_putchar('\\');
+				_putchar(92);
 			}
 		}
 		_putchar('\n');
+	}
 	}
 }
