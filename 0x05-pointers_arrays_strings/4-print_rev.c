@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- * _puts - print
- * @str: pointer
+ * print_rev - print
+ * @s: pointer
  * Return: 0
  */
 
