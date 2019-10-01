@@ -1,0 +1,1 @@
+This repo contains the info for the all of the exercises of the point 5
