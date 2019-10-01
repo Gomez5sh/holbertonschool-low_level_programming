@@ -22,7 +22,7 @@ void print_rev(char *s)
 
 	for (x = n; x >= 0; x--)
 	{
-		if (x != 0)
+		if (x != n)
 		{
 			_putchar(*s);
 		}
