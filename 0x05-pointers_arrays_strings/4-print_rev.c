@@ -20,7 +20,7 @@ void print_rev(char *s)
 		n++;
 	}
 
-	for (x = n; n >= 0; n--)
+	for (x = n; x >= 0; x--)
 	{
 		if (x != 0)
 		{
