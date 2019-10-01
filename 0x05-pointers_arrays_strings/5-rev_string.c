@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * print_rev - print
+ * rev_string - print
  * @s: pointer
  * Return: 0
  */
@@ -19,7 +19,7 @@ void rev_string(char *s)
 	{
 	}
 
-	f = f -1;
+	f = f - 1;
 
 	for (i = 0; i <= f; i++)
 	{
