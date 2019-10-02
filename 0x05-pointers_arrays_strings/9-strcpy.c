@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * puts_half - Prints every other character of a string
- * @str: The evaluated input
- *
- * Return: n value
+ * _strcpy - variables
+ * @src: The evaluated input
+ * @dest: The evaluated input
+ * Return: dest
  */
 
 char *_strcpy(char *dest, char *src)
