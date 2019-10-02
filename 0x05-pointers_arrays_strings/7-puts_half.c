@@ -11,7 +11,6 @@ void puts_half(char *str)
 {
 	int n;
 	int l;
-	int c;
 
 	n = 0;
 
