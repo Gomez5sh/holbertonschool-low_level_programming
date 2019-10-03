@@ -6,9 +6,12 @@
  * @n: variable
  * Return: 0
  */
+
 void reverse_array(int *a, int n)
 {
-	int i, h, f;
+	int i;
+	int h;
+	int f;
 
 	n = n - 1;
 
