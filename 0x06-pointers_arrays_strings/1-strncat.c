@@ -1,9 +1,10 @@
 #include "holberton.h"
 
 /**
- * _strcat - print the string
+ * _strncat - print the string
  * @src: The evaluated input
  * @dest: The evaluated input
+ * @n: The evaluated input
  * Return: dest
  */
 
@@ -22,5 +23,5 @@ char *_strncat(char *dest, char *src, int n)
 		j++;
 	}
 
-	return dest;
+	return (dest);
 }
