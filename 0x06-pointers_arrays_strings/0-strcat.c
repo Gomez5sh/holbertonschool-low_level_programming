@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _strcpy - variables
+ * _strcat - funtion
  * @src: The evaluated input
  * @dest: The evaluated input
  * Return: dest
