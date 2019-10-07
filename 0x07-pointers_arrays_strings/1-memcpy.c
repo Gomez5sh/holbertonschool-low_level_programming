@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * _memset - prints buffer in hexa
- * @s: the address of memory to print
- * @b: the size of the memory to print
- * @n: variable
+ * _memcpy - prints buffer in hexa
+ * @dest: Variable 1
+ * @src: Variable 2
+ * @n: variable 3
  *
  * Return: Nothing.
  */
