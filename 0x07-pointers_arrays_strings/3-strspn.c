@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _strchr - function that locates a character in a string.
+ * _strspn - function that locates a character in a string.
  *@s: Variable 1
  *@accept: Variable 2
  * Return: s or null.
@@ -12,7 +12,7 @@ unsigned int _strspn(char *s, char *accept)
 {
 
 	int i, f, n;
-	unsigned a;
+	unsigned int a;
 
 	for (n = 0; accept[n] != '\0'; n++)
 	{
@@ -22,9 +22,9 @@ unsigned int _strspn(char *s, char *accept)
 			for (f = 0; accept[f] != '\0'; f++)
 			{
 				if (s[i] == accept[f])
-					{
-						a++;
-					}
+				{
+					a++;
+				}
 			}
 
 		}
