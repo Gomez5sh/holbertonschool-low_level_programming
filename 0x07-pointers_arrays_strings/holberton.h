@@ -7,4 +7,6 @@ char *_memset(char *s, char b, unsigned int n);
 
 char *_memcpy(char *dest, char *src, unsigned int n);
 
+char *_strpbrk(char *s, char *accept);
+
 #endif /* HOLBERTON_H */
