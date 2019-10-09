@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
- * _puts_rev_recursion - check the code for Holberton School students.
- *@s : viriable
+ * _print_rev_recursion - check the code for Holberton School students.
+ * @s : reverse
  * Return: none
  */
 
