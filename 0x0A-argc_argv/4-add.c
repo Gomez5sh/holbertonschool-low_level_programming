@@ -1,40 +1,38 @@
-#include "holberton.h"
-#include <stdio.h>
 #include <stdlib.h>
-
+#include <stdio.h>
+#include "holberton.h"
 /**
- * check - aux
- * @s: variable
+ * main - prints buffer in hexa
+ * @argc: argument count
+ * @argv: argument value
  *
- * Return: res.
+ *
+ * Return: Nothing.
  */
-
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int i;
-	int n = 0;
+	int i, res;
 
-	if (argc == 1)
+	if (argc == 0)
 	{
-		printf("0\n");
+		printf("0 \n");
 		return (1);
 	}
 	else
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (*argv[i] > 48 && *argv[i] < 57)
+			if (*argv[i] >= 48 && *argv[i] <= 57)
 			{
-				n = n + atoi(argv[i]);
+				res += atoi(argv[i]);
 			}
 			else
 			{
-				printf("Error\n");
+				puts("Error");
 				return (1);
 			}
 		}
-		printf("%d\n", n);
+		printf("%i \n", res);
 	}
 	return (0);
-
 }
