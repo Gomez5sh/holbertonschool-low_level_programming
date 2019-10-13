@@ -34,6 +34,6 @@ return (1);
 add += atoi(argv[i++]);
 }
 }
-printf("%d\n", add);
+printf("%d\n", n);
 return (0);
 }
