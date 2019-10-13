@@ -1,39 +1,39 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include "holberton.h"
+#include <stdio.h>
+#include <stdlib.h>
 #include <ctype.h>
 /**
- * main - prints buffer in hexa
- * @argc: argument count
- * @argv: argument value
+ * main - Adds positive numbers
+ * @argc: Firts input int argument
+ * @argv: Second input char argument of string
  *
  *
- * Return: Nothing.
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
-int i, res;
 
-if (argc == 0)
+int i,j ,n;
+
+i = 1;
+j = 0;
+n = 0;
+
+if (argc > 1)
 {
-printf("0\n");
+while (i < argc)
+{
+while (argv[i][j] != 0)
+{
+if (!isdigit(argv[i][j++]))
+{
+printf("Error\n");
 return (1);
 }
-else
-{
-for (i = 1; i < argc; i++)
-{
-if (*argv[i] >= 48 && *argv[i] <= 57)
-{
-res += atoi(argv[i]);
 }
-else
-{
-puts("Error");
-return (1);
+add += atoi(argv[i++]);
 }
 }
-printf("%i\n", res);
-}
+printf("%d\n", add);
 return (0);
 }
