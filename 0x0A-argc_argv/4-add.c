@@ -11,28 +11,28 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, res;
+  int i, res;
 
-	if (argc == 0)
+  if (argc == 0)
+    {
+      printf("0 \n");
+      return (1);
+    }
+  else
+    {
+      for (i = 1; i < argc; i++)
 	{
-		printf("0 \n");
-		return (1);
+	  if (*argv[i] >= 48 && *argv[i] <= 57)
+	    {
+	      res += atoi(argv[i]);
+	    }
+	  else
+	    {
+	      puts("Error");
+	      return (1);
+	    }
 	}
-	else
-	{
-		for (i = 1; i < argc; i++)
-		{
-			if (*argv[i] >= 48 && *argv[i] <= 57)
-			{
-				res += atoi(argv[i]);
-			}
-			else
-			{
-				puts("Error");
-				return (1);
-			}
-		}
-		printf("%i \n", res);
-	}
-	return (0);
+      printf("%i \n", res);
+    }
+  return (0);
 }
