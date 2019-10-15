@@ -15,7 +15,16 @@ char *str_concat(char *s1, char *s2)
 {
 
 	int n, i, b, c;
-	char *a;
+	char *a, *empty = "";
+
+	if (s1 == NULL)
+	{
+		s1 = empty;
+	}
+	if (s2 == NULL)
+	{
+		s2 = empty;
+	}
 
 	for (n = 0; s1[n] != '\0'; n++)
 	{}
