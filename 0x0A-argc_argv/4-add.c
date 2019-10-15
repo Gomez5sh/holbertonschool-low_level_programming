@@ -1,40 +1,39 @@
 #include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <ctype.h>
 /**
- * check - aux
- * @s: variable
+ * main - Adds positive numbers
+ * @argc: Firts input int argument
+ * @argv: Second input char argument of string
  *
- * Return: res.
+ *
+ * Return: 0
  */
-
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int i;
-	int n = 0;
 
-	if (argc == 1)
-	{
-		printf("0\n");
-		return (1);
-	}
-	else
-	{
-		for (i = 1; i < argc; i++)
-		{
-			if (*argv[i] > 48 && *argv[i] < 57)
-			{
-				n = n + atoi(argv[i]);
-			}
-			else
-			{
-				printf("Error\n");
-				return (1);
-			}
-		}
-		printf("%d\n", n);
-	}
-	return (0);
+int i,j ,n;
 
+i = 1;
+j = 0;
+n = 0;
+
+if (argc > 1)
+{
+while (i < argc)
+{
+while (argv[i][j] != 0)
+{
+if (!isdigit(argv[i][j++]))
+{
+printf("Error\n");
+return (1);
+}
+}
+add += atoi(argv[i++]);
+}
+}
+printf("%d\n", n);
+return (0);
 }
