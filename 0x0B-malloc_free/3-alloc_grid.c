@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * str_concat -  concatenates two strings.
+ * alloc_grid -  concatenates two strings.
  *
  * @width: string variable.
  * @height: string variable.
@@ -17,13 +17,13 @@ int **alloc_grid(int width, int height)
 	int i, n;
 	int **p;
 
-	p = malloc(height * sizeof(int*));
+	p = malloc(height * sizeof(int *));
 
 	if (p == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < height; i ++)
+	for (i = 0; i < height; i++)
 	{
 		*(p + i) = malloc(width * sizeof(int));
 
@@ -31,9 +31,9 @@ int **alloc_grid(int width, int height)
 		{
 			break;
 
-			for (n = i; n >= 0; n --)
+			for (n = i; n >= 0; n--)
 			{
-				free (p + n);
+				free(p + n);
 			}
 		}
 	}
