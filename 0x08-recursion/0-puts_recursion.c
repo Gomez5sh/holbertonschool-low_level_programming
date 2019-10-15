@@ -1,11 +1,12 @@
 #include "holberton.h"
+
 /**
  * _puts_recursion - check the code for Holberton School students.
  *@s : viriable
  * Return: none
  */
-void _puts_recursion(char *s)
 
+void _puts_recursion(char *s)
 {
 	if (*s != '\0')
 	{
