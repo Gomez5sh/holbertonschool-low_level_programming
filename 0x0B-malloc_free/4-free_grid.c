@@ -3,10 +3,10 @@
 #include <stdlib.h>
 
 /**
- * alloc_grid - matrix 3x4
- * @width: variable
+ * free_grid - matrix 3x4
+ * @grid: variable
  * @height: variable
- * Return: **p or null
+ * Return: no return.
  */
 
 void free_grid(int **grid, int height)
