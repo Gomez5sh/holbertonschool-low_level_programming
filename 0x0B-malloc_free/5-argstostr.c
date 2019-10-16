@@ -13,10 +13,8 @@ int _strlen(char *s)
 {
 	int i;
 
-	while (s[i] != 0)
-	{
-		i++;
-	}
+	for (i = 0; s[i] != 0; i++)
+		;
 	return (i);
 }
 /**
@@ -39,23 +37,25 @@ char *argstostr(int ac, char **av)
 		sum = sum + _strlen(av[b]);
 	}
 
-	p = malloc((sum + ac) * sizeof(char) + 1);
+	p = malloc((sum + ac + 1) * sizeof(char));
 
 	if (p == NULL)
 	{
+		free(p);
 		return (NULL);
 	}
+
 	sum = 0;
 
 	for (n = 0; n < ac; n++)
+	{
+		for (i = 0; av[n][i] != '\0'; i++)
 		{
-			for (i = 0; av[n][i] != '\0'; i++)
-			{
-				p[sum] = av[n][i];
-				sum++;
-			}
-			p[sum] = '\n';
+			p[sum] = av[n][i];
 			sum++;
 		}
+		p[sum] = '\n';
+		sum++;
+	}
 	return (p);
 }
