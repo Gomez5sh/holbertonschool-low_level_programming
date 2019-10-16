@@ -3,41 +3,32 @@
 #include <stdlib.h>
 
 /**
- * alloc_grid -  concatenates two strings.
- *
- * @width: string variable.
- * @height: string variable.
- *
- * Return: 0 or null.
+ * alloc_grid - matrix 3x4
+ * @width: variable
+ * @height: variable
+ * Return: **p or null
  */
 
 int **alloc_grid(int width, int height)
 {
-  
-  int i, n;
-  int **p;
+	int n, i, **p;
+
+	p = malloc(height * sizeof(int*));
 	
-  p = malloc(height * sizeof(int *));
-  
-  if (width <= 0 || height <= 0)
-    {
-      return (NULL);
-    }
-  for (i = 0; i < height; i++)
-    {
-      *(p + i) = malloc(width * sizeof(int));
-      
-      if (*(p + i) == 0)
+	if (width > 0 || height > 0)
 	{
-	  break;
-	  
-	  for (n = i; n >= 0; n--)
-	    {
-	      p[i][n] = 0;
-	      free(*(p + n));
-			  }
-	  free(p);
+		for (i = 0; i < height; i++)
+		{
+			p[i] = malloc(width * sizeof(int));
+			for (n = 0; n < width; n++)
+			{
+				p[i][n] = 0;
+			}
+		}
 	}
-    }
-  return (p);
+	else
+	{
+		return (NULL);
+	}
+	return (p);
 }
