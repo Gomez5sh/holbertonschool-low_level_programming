@@ -1,11 +1,10 @@
 #include "holberton.h"
 
 /**
- * string_nconcat - status.
+ * array_range - status.
  *
- * @s1: variable.
- * @s2: variable
- * @n: variable
+ * @max: variable.
+ * @min: variable
  *
  * Return: value of 98.
  */
