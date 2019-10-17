@@ -12,24 +12,25 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i, j;
 	char *p;
+	char *nul = "";
+	unsigned int i, j;
 
 	for (i = 0; s1[i] != 00; i++)
 	{}
-	p = malloc(sizeof(*p) * i + n + 1);
+
+	p = malloc(sizeof(*p) * (i + n) + 1);
 	if (p == 00)
 	{
-		free(p);
 		return (00);
 	}
 	if (!s1)
 	{
-		s1 = "";
+		s1 = nul;
 	}
 	if (!s2)
 	{
-		s2 = "";
+		s2 = nul;
 	}
 	for (j = 0; s1[j] != 00; j++)
 	{
