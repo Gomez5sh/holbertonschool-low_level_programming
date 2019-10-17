@@ -1,9 +1,7 @@
 #include "holberton.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
- * malloc_checked - function should cause normal process termination with a status.
+ * malloc_checked - status.
  *
  * @b: string variable.
  *
