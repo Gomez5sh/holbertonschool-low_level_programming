@@ -2,11 +2,8 @@
 #include "dog.h"
 
 /**
- * init_dog - function that initialize a variable of type struct dog.
+ * print_dog - Write a function that prints a struct dog
  * @d: variable 1
- * @name: variable 2
- * @age: variable 3
- * @owner: variable 4
  *
  * Return: only in else.
  */
@@ -21,7 +18,7 @@ void print_dog(struct dog *d)
 		}
 		else
 		{
-			printf ("(nil)\n");
+			printf("(nil)\n");
 		}
 		if (!d->age)
 		{
@@ -41,8 +38,8 @@ void print_dog(struct dog *d)
 			printf("(nil)\n");
 		}
 	}
-	else (d == 00)
-	     {
-		     printf("");
-	     }
+	else
+	{
+		printf("");
+	}
 }
