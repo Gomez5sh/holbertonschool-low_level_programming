@@ -3,7 +3,7 @@
 #include "dog.h"
 
 /**
- * print_dog - Write a function that prints a struct dog
+ * free_dog - Write a function that prints a struct dog
  * @d: variable 1
  *
  * Return: only in else.
