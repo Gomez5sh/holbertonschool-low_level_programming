@@ -15,7 +15,7 @@ while (temp != NULL)
 {
 if (temp->str == NULL)
 {
-printf("(nil)\n");
+printf("[%u](nil)\n");
 temp = temp->next;
 n++;
 }
