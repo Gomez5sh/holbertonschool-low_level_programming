@@ -1,3 +1,5 @@
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -9,14 +11,13 @@
  * Return: len for uppercase
  */
 
-int _strlen(char *str)
+int _strlen(const char *str)
 
 {
-	int len = 0;
+	unsigned int len = 0;
 
-	while (*str != '\0')
+	while (str[len] != '\0')
 	{
-		str++;
 		len++;
 	}
 	return (len);
@@ -34,16 +35,13 @@ list_t *add_node(list_t **head, const char *str)
 	list_t *new;
 
 	new = malloc(sizeof(list_t));
-	if (new == NULL && str == NULL)
+	if (!new)
+    {
+      free(new);
 		return (NULL);
-
+    }
 	new->str = strdup(str);
-	if (new == NULL)
-	{
-		free(new);
-		return (NULL);
-	}
-	new->len = _strlen((char *) str);
+	new->len = _strlen(str);
 	new->next = *head;
 	*head = new;
 
