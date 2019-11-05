@@ -17,6 +17,6 @@ void free_listint2(listint_t **head)
 	while (container->next != 0)
 	{
 		container = container->next;
-	}
 		free(fr);
+	}
 }
