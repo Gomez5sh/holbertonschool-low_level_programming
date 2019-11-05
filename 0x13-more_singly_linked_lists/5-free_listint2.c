@@ -9,14 +9,9 @@
 
 void free_listint2(listint_t **head)
 {
-	listint_t *container, *fr;
-
-	container = *head;
-	fr = *head;
-
-	while (container->next != 0)
+	if (head != NULL)
 	{
-		container = container->next;
-		free(fr);
+		free_listint2(&((*head)->next));
+		free(*head);
 	}
 }
