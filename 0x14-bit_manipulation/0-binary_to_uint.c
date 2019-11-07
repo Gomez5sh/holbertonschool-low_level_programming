@@ -4,13 +4,13 @@
  * binary_to_uint - Binary to decimal.
  * @b: pointer.
  * Return: res.
- * */
+ */
 
 unsigned int binary_to_uint(const char *b)
 {
 	int i, base;
 	unsigned int res;
-	
+
 	res = 0;
 	for (i = 0; b[i]; i++)
 	{
