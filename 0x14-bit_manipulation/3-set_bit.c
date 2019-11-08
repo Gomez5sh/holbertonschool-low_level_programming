@@ -2,8 +2,8 @@
 
 /**
  * set_bit - set value of a bit
- * @n: input dir;
- * @index: index of a bit
+ * @n: var
+ * @index: var
  * Return:(1) if is success (-1) if is fail
  */
 int set_bit(unsigned long int *n, unsigned int index)
@@ -14,3 +14,4 @@ int set_bit(unsigned long int *n, unsigned int index)
 		return (1);
 	}
 	return (-1);
+}
