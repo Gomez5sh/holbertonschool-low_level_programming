@@ -5,7 +5,7 @@
  * @head: Doble pointer
  * @n: iter
  *
- * The adrees of the new element
+ * Return: The adrees of the new element
  */
 
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
