@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * get_dnodeint_at_index - Funtion to return a node 
+ * get_dnodeint_at_index - Funtion to return a node
  * @head: pointer
  * @index: iter
  *
@@ -18,7 +18,7 @@ return (NULL);
 while (iter != index)
 {
 if (!head)
-return(NULL);
+return (NULL);
 
 head = head->next;
 iter++;
