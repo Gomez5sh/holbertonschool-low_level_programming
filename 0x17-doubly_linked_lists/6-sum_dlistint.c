@@ -16,5 +16,5 @@ i += head->n;
 head = head->next;
 }
 
- return (i);
+return (i);
 }
