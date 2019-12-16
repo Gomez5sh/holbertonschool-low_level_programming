@@ -9,12 +9,12 @@
 int sum_dlistint(dlistint_t *head)
 {
 int i = 0;
-dlistint_t *container = head;
-while (!container)
+
+while (head)
 {
-i += container->n;
-container = container->next;
+i += head->n;
+head = head->next;
 }
 
-return (i);
+ return (i);
 }
