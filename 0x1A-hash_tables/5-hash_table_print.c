@@ -8,23 +8,23 @@
 void hash_table_print(const hash_table_t *ht)
 {
 hash_node_t *seeker;
-unsigned int i;
-int n = 0;
+unsigned int i = 0;
+int queue = 1;
 
-if (!ht)
-return (NULL);
-
+putchar('{');
 for (i = 0; i < ht->size ; i++)
 {
 seeker = ht->array[i];
-while (seeker)
+for ( ; seeker != NULL; seeker = seeker->next)
 {
-if (n)
-printf(", ");
-else:
+if (queue == 1)
 printf("'%s': '%s'",seeker->key, seeker->value);
-seeker = n->next;
-n = 1;
+else
+printf(", '%s': '%s'",seeker->key, seeker->value);
+
+queue = 127;
+
 }
- printf("}\n");
+}
+printf("}\n");
 }
