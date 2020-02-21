@@ -1,8 +1,8 @@
 CC=gcc
 SRC=holberton.c main.c
-OBJ=holberton.o main.o
+OBJ= $(SRC:.C=.O)
 NAME=holberton
-RM= rm
+RM=rm
 
 all: $(OBJ)
 	$(CC) $(SRC) -o $(NAME)
@@ -13,6 +13,6 @@ cleac:
 ocleam:
 	$(RM) -f $(OBJ)
 
-fclean:	clean oclean
+fclean:clean oclean
 
-re: oclean all
+re:oclean all
